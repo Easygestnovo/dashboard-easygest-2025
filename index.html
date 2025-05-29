@@ -64,23 +64,33 @@
 <body>
 
 <script>
-  var password = prompt("🔒 Área Reservada\n\nIntroduza a palavra-passe:");
+document.addEventListener("DOMContentLoaded", function() {
+    var password = prompt("🔒 Área Reservada\n\nIntroduza a palavra-passe:");
+    if (password !== "easygest2025") {
+        alert("❌ Acesso negado.");
+        window.location.href = "https://www.google.com/";
+    }
+});
+</script>
+
+<script>
+  var password = prompt("🔒 Área Reservada 
+
+Introduza a palavra-passe:");
   if (password !== "easygest2025") {
     alert("❌ Acesso negado.");
     window.location.href = "https://www.google.com/";
   }
 </script>
-
-
 <div class='banner'>
     <img src='banner_dashboard_final.jpg' alt='Banner EasyGest Ranking'>
 </div>
 <h1>🏆 Dashboard TOP 10 - Angariações 2025</h1>
 <div class='grid'>
-<div class="chart"><h2>Angariador - Total</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>11</td></tr><tr><td>🥈 2º</td><td>Carlos Estebainha</td><td>10</td></tr><tr><td>🥉 3º</td><td>Matos Pires</td><td>10</td></tr><tr><td>4º</td><td>José Estebainha</td><td>9</td></tr><tr><td>5º</td><td>Sónia Pisco</td><td>9</td></tr><tr><td>6º</td><td>João Marquês</td><td>9</td></tr><tr><td>7º</td><td>Jaime Lopes</td><td>9</td></tr><tr><td>8º</td><td>Julieta Amaro</td><td>8</td></tr><tr><td>9º</td><td>Nuno Mano</td><td>8</td></tr><tr><td>10º</td><td>Tiago Romão</td><td>7</td></tr></tbody></table></div>
-<div class="chart"><h2>Loja - Total</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Oeiras</td><td>28</td></tr><tr><td>🥈 2º</td><td>HUB</td><td>26</td></tr><tr><td>🥉 3º</td><td>Tomar</td><td>26</td></tr><tr><td>4º</td><td>Beja</td><td>24</td></tr><tr><td>5º</td><td>Açores</td><td>24</td></tr><tr><td>6º</td><td>Setúbal</td><td>23</td></tr><tr><td>7º</td><td>Vila Real de Sto Antonio</td><td>18</td></tr><tr><td>8º</td><td>Pinhal Novo</td><td>16</td></tr><tr><td>9º</td><td>Nazaré</td><td>16</td></tr><tr><td>10º</td><td>Portimão</td><td>15</td></tr></tbody></table></div>
-<div class="chart"><h2>Angariador - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>11</td></tr><tr><td>🥈 2º</td><td>Sónia Pisco</td><td>9</td></tr><tr><td>🥉 3º</td><td>Matos Pires</td><td>5</td></tr><tr><td>4º</td><td>Maria C Silva</td><td>5</td></tr><tr><td>5º</td><td>Catarina Garizo</td><td>4</td></tr><tr><td>6º</td><td>Paulo Antunes</td><td>4</td></tr><tr><td>7º</td><td>Manuel Silva</td><td>4</td></tr><tr><td>8º</td><td>Antonieta Martins</td><td>4</td></tr><tr><td>9º</td><td>Tânia Claudino</td><td>3</td></tr><tr><td>10º</td><td>Ana Cristina</td><td>3</td></tr></tbody></table></div>
-<div class="chart"><h2>Loja - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Açores</td><td>23</td></tr><tr><td>🥈 2º</td><td>Bragança</td><td>13</td></tr><tr><td>🥉 3º</td><td>Oeiras</td><td>13</td></tr><tr><td>4º</td><td>Pinhal Novo</td><td>9</td></tr><tr><td>5º</td><td>Setúbal</td><td>9</td></tr><tr><td>6º</td><td>Paulo Fonseca</td><td>8</td></tr><tr><td>7º</td><td>Charneca da Caparica</td><td>6</td></tr><tr><td>8º</td><td>Beja</td><td>6</td></tr><tr><td>9º</td><td>HUB</td><td>6</td></tr><tr><td>10º</td><td>Nazaré</td><td>6</td></tr></tbody></table></div>
+<div class="chart"><h2>Angariador - Total</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>José Estebainha</td><td>18</td></tr><tr><td>🥈 2º</td><td>Matos Pires</td><td>15</td></tr><tr><td>🥉 3º</td><td>Nuno Mano</td><td>14</td></tr><tr><td>4º</td><td>Carlos Estebainha</td><td>13</td></tr><tr><td>5º</td><td>Mark Barbosa</td><td>13</td></tr><tr><td>6º</td><td>Paulo Antunes</td><td>13</td></tr><tr><td>7º</td><td>Madalena Melo</td><td>12</td></tr><tr><td>8º</td><td>Tânia Vaz</td><td>11</td></tr><tr><td>9º</td><td>Sónia Pisco</td><td>10</td></tr><tr><td>10º</td><td>Julieta Amaro</td><td>9</td></tr></tbody></table></div>
+<div class="chart"><h2>Loja - Total</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Oeiras</td><td>28</td></tr><tr><td>🥈 2º</td><td>Tomar</td><td>26</td></tr><tr><td>🥉 3º</td><td>HUB</td><td>26</td></tr><tr><td>4º</td><td>Açores</td><td>24</td></tr><tr><td>5º</td><td>Beja</td><td>24</td></tr><tr><td>6º</td><td>Setúbal</td><td>23</td></tr><tr><td>7º</td><td>Vila Real de Sto Antonio</td><td>18</td></tr><tr><td>8º</td><td>Nazaré</td><td>16</td></tr><tr><td>9º</td><td>Pinhal Novo</td><td>16</td></tr><tr><td>10º</td><td>Portimão</td><td>15</td></tr></tbody></table></div>
+<div class="chart"><h2>Angariador - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>13</td></tr><tr><td>🥈 2º</td><td>Paulo Antunes</td><td>13</td></tr><tr><td>🥉 3º</td><td>Sónia Pisco</td><td>10</td></tr><tr><td>4º</td><td>Matos Pires</td><td>6</td></tr><tr><td>5º</td><td>Maria C Silva</td><td>5</td></tr><tr><td>6º</td><td>Catarina Garizo</td><td>4</td></tr><tr><td>7º</td><td>Manuel Silva</td><td>4</td></tr><tr><td>8º</td><td>Antonieta Martins</td><td>4</td></tr><tr><td>9º</td><td>Olinda Silva</td><td>3</td></tr><tr><td>10º</td><td>Carlos Estebainha</td><td>3</td></tr></tbody></table></div>
+<div class="chart"><h2>Loja - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Açores</td><td>23</td></tr><tr><td>🥈 2º</td><td>Oeiras</td><td>13</td></tr><tr><td>🥉 3º</td><td>Bragança</td><td>13</td></tr><tr><td>4º</td><td>Loja Bragança</td><td>11</td></tr><tr><td>5º</td><td>Paulo Fonseca</td><td>9</td></tr><tr><td>6º</td><td>Setúbal</td><td>9</td></tr><tr><td>7º</td><td>Pinhal Novo</td><td>9</td></tr><tr><td>8º</td><td>HUB</td><td>6</td></tr><tr><td>9º</td><td>Nazaré</td><td>6</td></tr><tr><td>10º</td><td>Beja</td><td>6</td></tr></tbody></table></div>
 </div>
 </body>
 </html>
