@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang='pt'><head><meta charset='UTF-8'>
+<title>Dashboard EasyGest 2025</title>
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif;background:#0b204d;color:#fff;}
+.layout{display:flex;min-height:100vh;}
+.sidebar{width:230px;background:#081a3d;padding:24px 16px;box-shadow:2px 0 8px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:24px;}
+.menu-title{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#9ca3af;}
+.nav{display:flex;flex-direction:column;gap:8px;}
+.nav button{width:100%;border-radius:999px;border:1px solid transparent;padding:10px 14px;background:transparent;color:#e5e7eb;text-align:left;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:10px;}
+.nav button.active{background:#118bd4;border-color:#36a3e4;color:#ffffff;font-weight:600;}
+.nav button:hover{background:rgba(148,163,184,.2);}
+.nav img.nav-icon{width:18px;height:18px;display:block;}
+.content{flex:1;padding:24px 32px 40px;}
+.banner{display:flex;justify-content:center;padding:10px 0 20px 0;}
+.banner img{max-height:150px;}
+h1{margin:0 0 8px 0;font-size:26px;display:flex;align-items:center;gap:10px;}
+.title-icon{width:22px;height:22px;display:inline-block;}
+.subtitle{margin-bottom:24px;color:#cbd5f5;font-size:14px;}
+.section-title{font-size:20px;margin:10px 0 20px;display:flex;align-items:center;gap:10px;}
+.section-title img.section-icon{width:20px;height:20px;display:block;}
+.pill{font-size:11px;text-transform:uppercase;letter-spacing:1px;padding:3px 8px;border-radius:999px;background:rgba(148,163,184,.2);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.chart{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(15,23,42,.5);padding:16px 18px 18px;overflow-x:auto;color:#111;}
+.chart h2{text-align:center;margin-bottom:10px;font-size:16px;color:#0b204d;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:left;}
+th{background:#f9fafb;color:#111;}
+.section{display:none;}
+.section.active{display:block;}
+.section-separator{margin:26px 0 12px;border-top:1px dashed rgba(148,163,184,.4);}
+
+/* FIX ICONS SIDEBAR */
+.nav button img, .nav-icon{
+  width:18px;
+  height:18px;
+  display:inline-block;
+  object-fit:contain;
+  vertical-align:middle;
+  flex:0 0 auto;
+}
+</style>
+</head>
+<body>
+<script>
+var p = prompt("🔒 Área Reservada 
+
+Introduza a palavra-passe:");
+if (p !== "easygest2025"){ alert("❌ Acesso negado."); window.location.href="https://www.google.com/"; }
+</script>
+<div class='layout'>
+<aside class='sidebar'>
+<div class='menu-title'>Dashboards 2025</div>
+<div class='nav'>
+<button class='active' data-target='sec-ang'><img class='nav-icon' src='Angariacao.png' alt='Angariações'>Angariações</button>
+<button data-target='sec-fat'><img class='nav-icon' src='Faturacao.png' alt='Faturação'>Faturação</button>
+</div>
+</aside>
+<main class='content'>
+<div class='banner'><img src='banner_dashboard_final.jpg' alt='EasyGest'></div>
+<h1><img class='title-icon' src='Dashboards.png' alt='Dashboards'>Dashboards EasyGest 2025</h1>
+<div class='subtitle'>Visão consolidada de Angariações e Faturação.</div>
+
+<section id='sec-ang' class='section active'>
+<div class='section-title'><img class='section-icon' src='Angariacao.png' alt='Angariações'>Dashboard de Angariações 2025 <span class='pill'>Mediação</span></div>
+<div class='grid'>
+<div class='chart'><h2>Angariador - Total</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>42</td></tr><tr><td>🥈 2º</td><td>José Estebainha</td><td>38</td></tr><tr><td>🥉 3º</td><td>Carlos Estebainha</td><td>35</td></tr><tr><td>4º</td><td>Sónia Pisco</td><td>29</td></tr><tr><td>5º</td><td>Matos Pires</td><td>24</td></tr><tr><td>6º</td><td>Paulo Antunes</td><td>22</td></tr><tr><td>6º</td><td>Madalena Melo</td><td>22</td></tr><tr><td>7º</td><td>Ana Cruz</td><td>19</td></tr><tr><td>7º</td><td>Roberto da Silva</td><td>19</td></tr><tr><td>8º</td><td>Fernando Rocha</td><td>18</td></tr><tr><td>8º</td><td>António Januário</td><td>18</td></tr><tr><td>9º</td><td>Carina Salgueiro</td><td>17</td></tr><tr><td>10º</td><td>Joaquim Belim</td><td>16</td></tr></tbody></table></div><div class='chart'><h2>Loja - Total</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Total</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Oeiras</td><td>107</td></tr><tr><td>🥈 2º</td><td>Açores</td><td>89</td></tr><tr><td>🥉 3º</td><td>Beja</td><td>75</td></tr><tr><td>4º</td><td>Bragança</td><td>71</td></tr><tr><td>5º</td><td>Setubal</td><td>70</td></tr><tr><td>6º</td><td>Coimbra</td><td>68</td></tr><tr><td>7º</td><td>EasyHub Seixal</td><td>65</td></tr><tr><td>8º</td><td>Tomar</td><td>60</td></tr><tr><td>9º</td><td>Nazaré</td><td>58</td></tr><tr><td>10º</td><td>Vila Real de Sto António</td><td>52</td></tr></tbody></table></div><div class='chart'><h2>Angariador - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Angariador</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>42</td></tr><tr><td>🥈 2º</td><td>Sónia Pisco</td><td>26</td></tr><tr><td>🥉 3º</td><td>Paulo Antunes</td><td>22</td></tr><tr><td>4º</td><td>Fernando Rocha</td><td>15</td></tr><tr><td>5º</td><td>Matos Pires</td><td>13</td></tr><tr><td>6º</td><td>Carlos Estebainha</td><td>12</td></tr><tr><td>7º</td><td>Ana Cruz</td><td>11</td></tr><tr><td>8º</td><td>Antonieta Martins</td><td>9</td></tr><tr><td>9º</td><td>Tiago Abreu Pereira</td><td>8</td></tr><tr><td>9º</td><td>Roberto da Silva</td><td>8</td></tr><tr><td>9º</td><td>Deolinda Alves</td><td>8</td></tr><tr><td>9º</td><td>Olinda Silva</td><td>8</td></tr><tr><td>9º</td><td>Maria C Silva</td><td>8</td></tr><tr><td>9º</td><td>Joaquim Belim</td><td>8</td></tr><tr><td>10º</td><td>Elisabete Laurindo</td><td>7</td></tr><tr><td>10º</td><td>Paula Coelho</td><td>7</td></tr><tr><td>10º</td><td>Maria Menino</td><td>7</td></tr></tbody></table></div><div class='chart'><h2>Loja - Exclusivo</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Exclusivos</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Açores</td><td>86</td></tr><tr><td>🥈 2º</td><td>Bragança</td><td>60</td></tr><tr><td>🥉 3º</td><td>Oeiras</td><td>34</td></tr><tr><td>4º</td><td>Setubal</td><td>33</td></tr><tr><td>5º</td><td>Pinhal Novo</td><td>29</td></tr><tr><td>6º</td><td>Nazaré</td><td>25</td></tr><tr><td>7º</td><td>EasyHub Seixal</td><td>20</td></tr><tr><td>7º</td><td>Beja</td><td>20</td></tr><tr><td>8º</td><td>Coimbra</td><td>16</td></tr><tr><td>9º</td><td>Portimão</td><td>15</td></tr><tr><td>10º</td><td>Paulo Fonseca</td><td>10</td></tr><tr><td>10º</td><td>Vila Real de Sto António</td><td>10</td></tr></tbody></table></div></div><div class='section-separator'></div></section>
+
+<section id='sec-fat' class='section'>
+<div class='section-title'><img class='section-icon' src='Faturacao.png' alt='Faturação'>Dashboard de Faturação 2025 <span class='pill'>Comissão Líquida</span></div>
+<div class='grid'>
+<div class='chart'><h2>Consultores - Comissão Líquida</h2><table><thead><tr><th>Lugar</th><th>Consultor</th><th>Comissão Líquida</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Mark Barbosa</td><td>374.254,11 €</td></tr><tr><td>🥈 2º</td><td>Fernando Rocha</td><td>286.920,79 €</td></tr><tr><td>🥉 3º</td><td>Matos Pires</td><td>170.268,90 €</td></tr><tr><td>4º</td><td>Elisabete Laurindo</td><td>122.460,05 €</td></tr><tr><td>5º</td><td>Lurdes Macedo</td><td>117.337,50 €</td></tr><tr><td>6º</td><td>Carlos Estebainha</td><td>99.210,93 €</td></tr><tr><td>7º</td><td>Carlos Marco</td><td>94.760,00 €</td></tr><tr><td>8º</td><td>José Estebainha</td><td>91.042,03 €</td></tr><tr><td>9º</td><td>Ana Cruz</td><td>72.929,47 €</td></tr><tr><td>10º</td><td>Adelaide Alpande</td><td>71.400,00 €</td></tr></tbody></table></div><div class='chart'><h2>Lojas - Comissão Líquida</h2><table><thead><tr><th>Lugar</th><th>Loja</th><th>Comissão Líquida</th></tr></thead><tbody><tr><td>🥇 1º</td><td>Açores</td><td>827.876,90 €</td></tr><tr><td>🥈 2º</td><td>Oeiras</td><td>402.954,22 €</td></tr><tr><td>🥉 3º</td><td>Coimbra</td><td>354.071,73 €</td></tr><tr><td>4º</td><td>Setúbal</td><td>304.745,00 €</td></tr><tr><td>5º</td><td>Pinhal Novo</td><td>296.293,78 €</td></tr><tr><td>6º</td><td>Vila Real de Santo António</td><td>206.021,31 €</td></tr><tr><td>7º</td><td>Beja</td><td>179.277,72 €</td></tr><tr><td>8º</td><td>Graça Lx</td><td>156.850,00 €</td></tr><tr><td>9º</td><td>EasyHub Seixal</td><td>129.228,32 €</td></tr><tr><td>10º</td><td>Portimão</td><td>128.684,00 €</td></tr></tbody></table></div></div></section></main></div>
+<script>
+const b = document.querySelectorAll('.nav button'), s = document.querySelectorAll('.section');
+b.forEach(x => x.onclick = () => {
+  b.forEach(i => i.classList.remove('active'));
+  x.classList.add('active');
+  s.forEach(j => j.classList.toggle('active', j.id === x.dataset.target));
+});
+</script>
+</body></html>
