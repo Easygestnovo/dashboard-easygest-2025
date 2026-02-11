@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang='pt'><head><meta charset='UTF-8'>
+<title>Dashboard EasyGest 2026 - Rede</title>
+<style>
+body{margin:0;font-family:'Segoe UI',sans-serif;background:#0b204d;color:#fff;}
+.layout{display:flex;min-height:100vh;}
+.sidebar{width:230px;background:#081a3d;padding:24px 16px;box-shadow:2px 0 8px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:24px;}
+.menu-title{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#9ca3af;}
+.nav{display:flex;flex-direction:column;gap:8px;}
+.nav button{width:100%;border-radius:999px;border:1px solid transparent;padding:10px 14px;background:transparent;color:#e5e7eb;text-align:left;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:10px;}
+.nav button.active{background:#118bd4;border-color:#36a3e4;color:#ffffff;font-weight:600;}
+.nav button:hover{background:rgba(148,163,184,.2);}
+.nav img.nav-icon{width:18px;height:18px;display:block;}
+.content{flex:1;padding:24px 32px 40px;}
+.banner{display:flex;justify-content:center;padding:10px 0 20px 0;}
+.banner img{max-height:150px;}
+h1{margin:0 0 8px 0;font-size:26px;display:flex;align-items:center;gap:10px;}
+.title-icon{width:22px;height:22px;display:inline-block;}
+.subtitle{margin-bottom:24px;color:#cbd5f5;font-size:14px;}
+.section-title{font-size:20px;margin:10px 0 20px;display:flex;align-items:center;gap:10px;}
+.section-title img.section-icon{width:20px;height:20px;display:block;}
+.pill{font-size:11px;text-transform:uppercase;letter-spacing:1px;padding:3px 8px;border-radius:999px;background:rgba(148,163,184,.2);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.chart{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(15,23,42,.5);padding:16px 18px 18px;overflow-x:auto;color:#111;}
+.chart h2{text-align:center;margin-bottom:10px;font-size:16px;color:#0b204d;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:left;}
+th{background:#f9fafb;color:#111;}
+.section{display:none;}
+.section.active{display:block;}
+.section-separator{margin:26px 0 12px;border-top:1px dashed rgba(148,163,184,.4);}
+/* FIX ICONS SIDEBAR */
+.nav button img, .nav-icon{
+  width:18px;height:18px;display:inline-block;object-fit:contain;vertical-align:middle;flex:0 0 auto;
+}
+</style>
+</head>
+<body>
+
+<div class='layout'>
+<aside class='sidebar'>
+<div class='menu-title'>Dashboards 2026 (Rede)</div>
+<div class='nav'>
+<button class='active' data-target='sec-ang'><img class='nav-icon' src='Angariacao.png' alt='Angariações'>Angariações</button>
+<button data-target='sec-fat'><img class='nav-icon' src='Faturacao.png' alt='Faturação'>Faturação</button>
+</div>
+</aside>
+<main class='content'>
+<div class='banner'><img src='banner_dashboard_final.jpg' alt='EasyGest'></div>
+<h1><img class='title-icon' src='Dashboards.png' alt='Dashboards'>Dashboards EasyGest 2026</h1>
+<div class='subtitle'>Visão consolidada de Angariações e Faturação.</div>
+
+<section id='sec-ang' class='section active'>
+<div class='section-title'><img class='section-icon' src='Angariacao.png' alt='Angariações'>Dashboard de Angariações 2026 <span class='pill'>Mediação</span></div>
+<div class='grid'>
+
+<div class='chart'><h2>Angariador - Total</h2>
+<table><thead><tr><th>Lugar</th><th>Angariador</th><th>Total</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>José Estebainha</td><td>4</td></tr><tr><td>🥈 2º</td><td>Ana Cruz</td><td>3</td></tr><tr><td>🥈 2º</td><td>Madalena Melo</td><td>3</td></tr><tr><td>🥈 2º</td><td>Paula Coelho</td><td>3</td></tr><tr><td>🥉 3º</td><td>Agostinho Gomes</td><td>2</td></tr><tr><td>🥉 3º</td><td>Paulo Julio</td><td>2</td></tr><tr><td>🥉 3º</td><td>Mário Ângelo</td><td>2</td></tr><tr><td>🥉 3º</td><td>Lurdes Macedo</td><td>2</td></tr><tr><td>🥉 3º</td><td>Luisa Fernandes</td><td>2</td></tr><tr><td>🥉 3º</td><td>Elisabete Laurindo</td><td>2</td></tr><tr><td>🥉 3º</td><td>João V Gonçalves</td><td>2</td></tr><tr><td>🥉 3º</td><td>Carlos Estebainha</td><td>2</td></tr><tr><td>🥉 3º</td><td>Paulo M Santos</td><td>2</td></tr><tr><td>🥉 3º</td><td>Luísa Salgado</td><td>2</td></tr><tr><td>4º</td><td>Manuel Nunes</td><td>1</td></tr><tr><td>4º</td><td>Bruno Rodrigues</td><td>1</td></tr><tr><td>4º</td><td>Sónia Santos</td><td>1</td></tr><tr><td>4º</td><td>Tiago Abreu Pereira</td><td>1</td></tr><tr><td>4º</td><td>Carlos Marco</td><td>1</td></tr><tr><td>4º</td><td>Olinda Silva</td><td>1</td></tr><tr><td>4º</td><td>Cristina Mendonça</td><td>1</td></tr><tr><td>4º</td><td>Miguel Rodrigues</td><td>1</td></tr><tr><td>4º</td><td>Miguel Ângelo</td><td>1</td></tr><tr><td>4º</td><td>Manuela Conceição</td><td>1</td></tr><tr><td>4º</td><td>Nicole Nunes</td><td>1</td></tr><tr><td>4º</td><td>Graça Corvinho</td><td>1</td></tr><tr><td>4º</td><td>Diana Marques</td><td>1</td></tr><tr><td>4º</td><td>Paula Rodrigues</td><td>1</td></tr><tr><td>4º</td><td>Carina Salgueiro</td><td>1</td></tr><tr><td>4º</td><td>Carlos Mendes</td><td>1</td></tr><tr><td>4º</td><td>Jose Antunes</td><td>1</td></tr><tr><td>4º</td><td>José Rodrigues</td><td>1</td></tr><tr><td>4º</td><td>Álvaro Ferreira</td><td>1</td></tr><tr><td>4º</td><td>Carlos Abrantes</td><td>1</td></tr><tr><td>4º</td><td>Antonieta Martins</td><td>1</td></tr><tr><td>4º</td><td>Luis Maciel</td><td>1</td></tr><tr><td>4º</td><td>Vera Santos Silva</td><td>1</td></tr><tr><td>4º</td><td>Anabela Lourenço</td><td>1</td></tr><tr><td>4º</td><td>Adriana Assis</td><td>1</td></tr><tr><td>4º</td><td>Francisco Fernandes</td><td>1</td></tr><tr><td>4º</td><td>Sónia Pisco</td><td>1</td></tr><tr><td>4º</td><td>Patrícia Félix</td><td>1</td></tr><tr><td>4º</td><td>Liliana Duarte</td><td>1</td></tr>
+</tbody></table></div>
+
+
+<div class='chart'><h2>Loja - Total</h2>
+<table><thead><tr><th>Lugar</th><th>Loja</th><th>Total</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>Coimbra</td><td>10</td></tr><tr><td>🥈 2º</td><td>Oeiras</td><td>7</td></tr><tr><td>🥉 3º</td><td>Portimão</td><td>6</td></tr><tr><td>4º</td><td>Vila Real de Sto António</td><td>5</td></tr><tr><td>5º</td><td>Beja</td><td>4</td></tr><tr><td>5º</td><td>Aveiro</td><td>4</td></tr><tr><td>5º</td><td>Aljustrel</td><td>4</td></tr><tr><td>5º</td><td>Graça</td><td>4</td></tr><tr><td>6º</td><td>Nazaré</td><td>3</td></tr><tr><td>6º</td><td>Pinhal Novo</td><td>3</td></tr><tr><td>7º</td><td>Tavira</td><td>2</td></tr><tr><td>7º</td><td>Açores</td><td>2</td></tr><tr><td>7º</td><td>Lourinhã</td><td>2</td></tr><tr><td>8º</td><td>Laranjeiras</td><td>1</td></tr><tr><td>8º</td><td>Setubal</td><td>1</td></tr><tr><td>8º</td><td>Mem Martins</td><td>1</td></tr><tr><td>8º</td><td>EasyHub Seixal</td><td>1</td></tr><tr><td>8º</td><td>Leiria</td><td>1</td></tr><tr><td>8º</td><td>Bragança</td><td>1</td></tr>
+</tbody></table></div>
+
+
+<div class='chart'><h2>Angariador - Exclusivo</h2>
+<table><thead><tr><th>Lugar</th><th>Angariador</th><th>Exclusivos</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>Ana Cruz</td><td>3</td></tr><tr><td>🥈 2º</td><td>Elisabete Laurindo</td><td>2</td></tr><tr><td>🥈 2º</td><td>Lurdes Macedo</td><td>2</td></tr><tr><td>🥈 2º</td><td>Carlos Estebainha</td><td>2</td></tr><tr><td>🥉 3º</td><td>Bruno Rodrigues</td><td>1</td></tr><tr><td>🥉 3º</td><td>Manuel Nunes</td><td>1</td></tr><tr><td>🥉 3º</td><td>Luisa Fernandes</td><td>1</td></tr><tr><td>🥉 3º</td><td>Paulo Julio</td><td>1</td></tr><tr><td>🥉 3º</td><td>Tiago Abreu Pereira</td><td>1</td></tr><tr><td>🥉 3º</td><td>Olinda Silva</td><td>1</td></tr><tr><td>🥉 3º</td><td>Diana Marques</td><td>1</td></tr><tr><td>🥉 3º</td><td>Paulo M Santos</td><td>1</td></tr><tr><td>🥉 3º</td><td>Miguel Ângelo</td><td>1</td></tr><tr><td>🥉 3º</td><td>Manuela Conceição</td><td>1</td></tr><tr><td>🥉 3º</td><td>Nicole Nunes</td><td>1</td></tr><tr><td>🥉 3º</td><td>Antonieta Martins</td><td>1</td></tr><tr><td>🥉 3º</td><td>Miguel Rodrigues</td><td>1</td></tr><tr><td>🥉 3º</td><td>José Rodrigues</td><td>1</td></tr><tr><td>🥉 3º</td><td>Paula Coelho</td><td>1</td></tr><tr><td>🥉 3º</td><td>Luis Maciel</td><td>1</td></tr><tr><td>🥉 3º</td><td>Adriana Assis</td><td>1</td></tr><tr><td>🥉 3º</td><td>Francisco Fernandes</td><td>1</td></tr><tr><td>🥉 3º</td><td>Sónia Pisco</td><td>1</td></tr><tr><td>🥉 3º</td><td>Patrícia Félix</td><td>1</td></tr><tr><td>🥉 3º</td><td>Liliana Duarte</td><td>1</td></tr>
+</tbody></table></div>
+
+
+<div class='chart'><h2>Loja - Exclusivo</h2>
+<table><thead><tr><th>Lugar</th><th>Loja</th><th>Exclusivos</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>Coimbra</td><td>5</td></tr><tr><td>🥈 2º</td><td>Beja</td><td>4</td></tr><tr><td>🥈 2º</td><td>Portimão</td><td>4</td></tr><tr><td>🥉 3º</td><td>Graça</td><td>3</td></tr><tr><td>4º</td><td>Pinhal Novo</td><td>2</td></tr><tr><td>4º</td><td>Vila Real de Sto António</td><td>2</td></tr><tr><td>4º</td><td>Açores</td><td>2</td></tr><tr><td>4º</td><td>Oeiras</td><td>2</td></tr><tr><td>5º</td><td>Laranjeiras</td><td>1</td></tr><tr><td>5º</td><td>Setubal</td><td>1</td></tr><tr><td>5º</td><td>Aveiro</td><td>1</td></tr><tr><td>5º</td><td>Mem Martins</td><td>1</td></tr><tr><td>5º</td><td>Lourinhã</td><td>1</td></tr><tr><td>5º</td><td>Bragança</td><td>1</td></tr>
+</tbody></table></div>
+
+</div>
+<div class='section-separator'></div>
+</section>
+
+<section id='sec-fat' class='section'>
+<div class='section-title'><img class='section-icon' src='Faturacao.png' alt='Faturação'>Dashboard de Faturação 2026 <span class='pill'>Comissão Líquida</span></div>
+<div class='grid'>
+
+<div class='chart'><h2>Consultores - Ranking (sem valores)</h2>
+<table><thead><tr><th>Lugar</th><th>Consultor</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>Paulo Julio</td></tr><tr><td>🥈 2º</td><td>Graça Corvinho</td></tr><tr><td>🥉 3º</td><td>Madalena Melo</td></tr><tr><td>4º</td><td>Joaquim Belim</td></tr><tr><td>5º</td><td>Elisabete Laurindo</td></tr><tr><td>6º</td><td>Fernando Rocha</td></tr><tr><td>7º</td><td>Luísa Salgado</td></tr><tr><td>8º</td><td>Tiago Abreu Pereira</td></tr><tr><td>9º</td><td>Lurdes Macedo</td></tr><tr><td>10º</td><td>André Boavida</td></tr>
+</tbody></table></div>
+
+
+<div class='chart'><h2>Lojas - Ranking (sem valores)</h2>
+<table><thead><tr><th>Lugar</th><th>Loja</th></tr></thead><tbody>
+<tr><td>🥇 1º</td><td>Coimbra</td></tr><tr><td>🥈 2º</td><td>Vila Real de Santo António</td></tr><tr><td>🥉 3º</td><td>Setúbal</td></tr><tr><td>4º</td><td>Aveiro</td></tr><tr><td>5º</td><td>Graça Lx</td></tr><tr><td>6º</td><td>Pinhal Novo</td></tr><tr><td>7º</td><td>Açores</td></tr><tr><td>8º</td><td>Nazaré</td></tr><tr><td>9º</td><td>EasyHub Seixal</td></tr><tr><td>10º</td><td>Oeiras</td></tr>
+</tbody></table></div>
+
+</div>
+</section>
+
+</main></div>
+<script>
+const b = document.querySelectorAll('.nav button'), s = document.querySelectorAll('.section');
+b.forEach(x => x.onclick = () => {
+  b.forEach(i => i.classList.remove('active'));
+  x.classList.add('active');
+  s.forEach(j => j.classList.toggle('active', j.id === x.dataset.target));
+});
+</script>
+</body></html>
